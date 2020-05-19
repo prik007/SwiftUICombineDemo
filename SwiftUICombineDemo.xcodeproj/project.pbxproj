@@ -14,6 +14,16 @@
 		A8B789DB2474694800828258 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8B789DA2474694800828258 /* Assets.xcassets */; };
 		A8B789DE2474694800828258 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8B789DD2474694800828258 /* Preview Assets.xcassets */; };
 		A8B789E12474694800828258 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8B789DF2474694800828258 /* LaunchScreen.storyboard */; };
+		A8B789ED2474698B00828258 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B789EA2474698B00828258 /* LoginView.swift */; };
+		A8B789EE2474698B00828258 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8B789EB2474698B00828258 /* LoginViewController.xib */; };
+		A8B789EF2474698B00828258 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B789EC2474698B00828258 /* LoginViewController.swift */; };
+		A8B789FB2474699C00828258 /* EmployeeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B789F22474699C00828258 /* EmployeeViewModel.swift */; };
+		A8B789FC2474699C00828258 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B789F42474699C00828258 /* ListItem.swift */; };
+		A8B789FD2474699C00828258 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B789F52474699C00828258 /* Employee.swift */; };
+		A8B789FE2474699C00828258 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B789F72474699C00828258 /* DetailView.swift */; };
+		A8B789FF2474699C00828258 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B789F82474699C00828258 /* ItemCell.swift */; };
+		A8B78A002474699C00828258 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B789F92474699C00828258 /* ListView.swift */; };
+		A8B78A012474699C00828258 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B789FA2474699C00828258 /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +36,16 @@
 		A8B789DD2474694800828258 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A8B789E02474694800828258 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8B789E22474694800828258 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8B789EA2474698B00828258 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		A8B789EB2474698B00828258 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		A8B789EC2474698B00828258 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A8B789F22474699C00828258 /* EmployeeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeViewModel.swift; sourceTree = "<group>"; };
+		A8B789F42474699C00828258 /* ListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
+		A8B789F52474699C00828258 /* Employee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		A8B789F72474699C00828258 /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		A8B789F82474699C00828258 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		A8B789F92474699C00828258 /* ListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		A8B789FA2474699C00828258 /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +80,7 @@
 			children = (
 				A8B789D12474694700828258 /* AppDelegate.swift */,
 				A8B789D32474694700828258 /* SceneDelegate.swift */,
+				A8B78A02247469A100828258 /* Module */,
 				A8B789D82474694700828258 /* ContentView.swift */,
 				A8B789DA2474694800828258 /* Assets.xcassets */,
 				A8B789DF2474694800828258 /* LaunchScreen.storyboard */,
@@ -76,6 +97,71 @@
 				A8B789DD2474694800828258 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A8B789E82474697600828258 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A8B789E92474698B00828258 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		A8B789E92474698B00828258 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A8B789EA2474698B00828258 /* LoginView.swift */,
+				A8B789EB2474698B00828258 /* LoginViewController.xib */,
+				A8B789EC2474698B00828258 /* LoginViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A8B789F02474699C00828258 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				A8B789F12474699C00828258 /* ViewModel */,
+				A8B789F32474699C00828258 /* Model */,
+				A8B789F62474699C00828258 /* View */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		A8B789F12474699C00828258 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A8B789F22474699C00828258 /* EmployeeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A8B789F32474699C00828258 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A8B789F42474699C00828258 /* ListItem.swift */,
+				A8B789F52474699C00828258 /* Employee.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A8B789F62474699C00828258 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A8B789F92474699C00828258 /* ListView.swift */,
+				A8B789F82474699C00828258 /* ItemCell.swift */,
+				A8B789F72474699C00828258 /* DetailView.swift */,
+				A8B789FA2474699C00828258 /* WebView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A8B78A02247469A100828258 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				A8B789E82474697600828258 /* Login */,
+				A8B789F02474699C00828258 /* List */,
+			);
+			path = Module;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +222,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8B789EE2474698B00828258 /* LoginViewController.xib in Resources */,
 				A8B789E12474694800828258 /* LaunchScreen.storyboard in Resources */,
 				A8B789DE2474694800828258 /* Preview Assets.xcassets in Resources */,
 				A8B789DB2474694800828258 /* Assets.xcassets in Resources */,
@@ -149,9 +236,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8B789EF2474698B00828258 /* LoginViewController.swift in Sources */,
+				A8B789FD2474699C00828258 /* Employee.swift in Sources */,
+				A8B78A012474699C00828258 /* WebView.swift in Sources */,
 				A8B789D22474694700828258 /* AppDelegate.swift in Sources */,
+				A8B789FF2474699C00828258 /* ItemCell.swift in Sources */,
+				A8B789FE2474699C00828258 /* DetailView.swift in Sources */,
+				A8B789FB2474699C00828258 /* EmployeeViewModel.swift in Sources */,
 				A8B789D72474694700828258 /* SwiftUICombineDemo.xcdatamodeld in Sources */,
+				A8B789FC2474699C00828258 /* ListItem.swift in Sources */,
+				A8B78A002474699C00828258 /* ListView.swift in Sources */,
 				A8B789D92474694700828258 /* ContentView.swift in Sources */,
+				A8B789ED2474698B00828258 /* LoginView.swift in Sources */,
 				A8B789D42474694700828258 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
