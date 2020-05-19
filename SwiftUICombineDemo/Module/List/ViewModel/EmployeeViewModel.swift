@@ -8,11 +8,11 @@
 
 import Foundation
 
-final class EmployeeViewModel: ObservableObject {
+final class EmployeeViewModel {
 
     static let shared = EmployeeViewModel()
     private init() {
-       // fetchEmployees()
+        fetchEmployees()
     }
     
     var employeeArray = [Employee]()
