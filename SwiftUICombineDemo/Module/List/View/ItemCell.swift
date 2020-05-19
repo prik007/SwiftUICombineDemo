@@ -10,19 +10,19 @@ import SwiftUI
 
 struct ItemCell: View {
     
-    var item: ListItem
+    var item: Employee
     
     var body: some View {
         HStack {
-            Image(systemName: item.image)
+            Image(systemName: "info")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .foregroundColor(.blue)
                 .frame(width: 30, height: 30)
             
             VStack(alignment: .leading) {
-                Text(item.title).font(.headline)
-                Text(item.subTitle).font(.subheadline).foregroundColor(.gray)
+                Text(item.employeeName ?? "").font(.headline)
+                Text(item.employeeSalary ?? "").font(.subheadline).foregroundColor(.gray)
             }
             Spacer()
         }

@@ -11,9 +11,9 @@ import UIKit
 
 struct ListView: View {
     
-   var items = [ListItem(title: "Name", subTitle: "Jack Ryan", image: "info"),
-                 ListItem(title: "Contact", subTitle: "9876543210", image: "phone"),
-                 ListItem(title: "Asset", subTitle: "PDF", image: "doc")]
+   var employees = [Employee(id: "1", employeeName: "Jack Ryan", employeeSalary: "1000"),
+   Employee(id: "2", employeeName: "John Snow", employeeSalary: "2000"),
+   Employee(id: "3", employeeName: "John Doe", employeeSalary: "3000")]
     
     @State var isShowingAlert = false
     @State var isShowingSheet = false
@@ -21,7 +21,7 @@ struct ListView: View {
     var body: some View {
         
         NavigationView {
-            List(items, id: \.title) { item in
+            List(employees, id: \.employeeName) { item in
                 
                 ZStack {
                     ItemCell(item: item)
