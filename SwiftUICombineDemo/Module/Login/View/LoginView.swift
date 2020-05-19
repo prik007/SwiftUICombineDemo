@@ -10,6 +10,9 @@ import SwiftUI
 
 struct LoginView: View {
     
+    @State var userName = ""
+    @State var password = ""
+    
     var body: some View {
         Form {
             Section {
@@ -17,11 +20,11 @@ struct LoginView: View {
                     .bold()
                     .frame(maxWidth: .infinity)
             }
-//            Section {
-//                TextField("Username", text: $viewModel.username)
-//                .autocapitalization(.none)
-//                SecureField("Password", text: $viewModel.password)
-//            }
+            Section {
+                TextField("Username", text: $userName)
+                .autocapitalization(.none)
+                SecureField("Password", text: $password)
+            }
             Section {
                 Button(action: { }) {
                     Text("LOGIN").bold()
