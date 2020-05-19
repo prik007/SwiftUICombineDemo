@@ -17,13 +17,18 @@ struct LoginView: View {
                     .bold()
                     .frame(maxWidth: .infinity)
             }
+//            Section {
+//                TextField("Username", text: $viewModel.username)
+//                .autocapitalization(.none)
+//                SecureField("Password", text: $viewModel.password)
+//            }
             Section {
                 Button(action: { }) {
                     Text("LOGIN").bold()
                 }
                 .foregroundColor(.white)
                 .frame(maxWidth: .infinity)
-            }
+            }.listRowBackground(Color.red)
         }
     }
 }
