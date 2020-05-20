@@ -23,6 +23,7 @@
 		A8B789FF2474699C00828258 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B789F82474699C00828258 /* ItemCell.swift */; };
 		A8B78A002474699C00828258 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B789F92474699C00828258 /* ListView.swift */; };
 		A8B78A012474699C00828258 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B789FA2474699C00828258 /* WebView.swift */; };
+		A8B78A0A2475380900828258 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B78A092475380900828258 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		A8B789F82474699C00828258 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		A8B789F92474699C00828258 /* ListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		A8B789FA2474699C00828258 /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		A8B78A092475380900828258 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				A8B789E92474698B00828258 /* View */,
+				A8B78A092475380900828258 /* ViewModel.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 				A8B789D22474694700828258 /* AppDelegate.swift in Sources */,
 				A8B789FF2474699C00828258 /* ItemCell.swift in Sources */,
 				A8B789FE2474699C00828258 /* DetailView.swift in Sources */,
+				A8B78A0A2475380900828258 /* ViewModel.swift in Sources */,
 				A8B789FB2474699C00828258 /* EmployeeViewModel.swift in Sources */,
 				A8B789D72474694700828258 /* SwiftUICombineDemo.xcdatamodeld in Sources */,
 				A8B78A002474699C00828258 /* ListView.swift in Sources */,

@@ -10,8 +10,7 @@ import SwiftUI
 
 struct LoginView: View {
     
-    @State var userName = ""
-    @State var password = ""
+    @ObservedObject private var viewModel = LoginViewModel()
     
     var body: some View {
         Form {
@@ -21,18 +20,19 @@ struct LoginView: View {
                     .frame(maxWidth: .infinity)
             }
             Section {
-                TextField("Username", text: $userName)
+                TextField("Username", text: $viewModel.userName)
                     .autocapitalization(.none)
-                SecureField("Password", text: $password)
+
+                SecureField("Password", text: $viewModel.password)
             }
             Section {
                 Button(action: { }) {
                     Text("LOGIN").bold()
                 }
-                    .disabled(true)
+                .disabled(!viewModel.isValid)
                     .foregroundColor(.white)
                     .frame(maxWidth: .infinity)
-            }.listRowBackground(Color.red)
+            }.listRowBackground(viewModel.isValid ? Color.green : Color.red)
         }
     }
 }

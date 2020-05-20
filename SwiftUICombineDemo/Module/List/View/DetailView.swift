@@ -10,7 +10,12 @@ import SwiftUI
 
 struct DetailView: View {
     
+    @State var statusMessage = "Initial"
+    
     var body: some View {
-        WebView()
+        VStack {
+            Text(statusMessage)
+            WebView(status: $statusMessage)
+        }
     }
 }

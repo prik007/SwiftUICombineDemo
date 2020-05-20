@@ -34,7 +34,7 @@ struct Employee {
     var employeeSalary: String?
 }
 
-extension Employee: Decodable {
+extension Employee: Decodable, Identifiable {
 
     private enum EmployeeKeys: String, CodingKey {
         case id

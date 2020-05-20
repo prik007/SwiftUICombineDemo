@@ -15,6 +15,8 @@ struct WebView: UIViewRepresentable {
     typealias UIViewType = WKWebView
     var urlString = "http://www.google.com"
     
+    @Binding var status: String
+    
     func makeCoordinator() -> WebView.Coordinator {
         return Coordinator(self)
     }
@@ -26,8 +28,11 @@ struct WebView: UIViewRepresentable {
     }
     
     func updateUIView(_ uiView: WKWebView, context: UIViewRepresentableContext<WebView>) {
-        if let url = URL(string: urlString) {
-            uiView.load(URLRequest(url: url))
+        
+        if status == "Initial" {
+            if let url = URL(string: urlString) {
+                uiView.load(URLRequest(url: url))
+            }
         }
     }
     
@@ -40,13 +45,15 @@ struct WebView: UIViewRepresentable {
         }
 
         func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
+            parent.status = "Loading"
         }
 
         func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
-            
+             parent.status = "Loading failed"
         }
 
         func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+             parent.status = "Loaded"
         }
     }
 }
