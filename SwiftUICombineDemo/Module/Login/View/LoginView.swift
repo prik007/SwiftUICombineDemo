@@ -22,15 +22,16 @@ struct LoginView: View {
             }
             Section {
                 TextField("Username", text: $userName)
-                .autocapitalization(.none)
+                    .autocapitalization(.none)
                 SecureField("Password", text: $password)
             }
             Section {
                 Button(action: { }) {
                     Text("LOGIN").bold()
                 }
-                .foregroundColor(.white)
-                .frame(maxWidth: .infinity)
+                    .disabled(true)
+                    .foregroundColor(.white)
+                    .frame(maxWidth: .infinity)
             }.listRowBackground(Color.red)
         }
     }
