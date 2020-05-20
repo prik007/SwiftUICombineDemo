@@ -103,7 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				A8B789E92474698B00828258 /* View */,
-				A8B78A092475380900828258 /* ViewModel.swift */,
+				A8B78A0B247543A900828258 /* ViewModel */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -162,6 +162,14 @@
 				A8B789F02474699C00828258 /* List */,
 			);
 			path = Module;
+			sourceTree = "<group>";
+		};
+		A8B78A0B247543A900828258 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A8B78A092475380900828258 /* ViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
